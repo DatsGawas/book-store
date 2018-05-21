@@ -1,0 +1,13 @@
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+
+
+<!-- Notification UI for Showing notification of user action-->
+
+<amexio-notification [data]="_notificationService.notifivationData"
+                     [vertical-position]="'top'"
+                     [horizontal-position]="'right'"
+                     [auto-dismiss-msg]="true"
+                     [auto-dismiss-msg-interval]="6000">
+</amexio-notification>
